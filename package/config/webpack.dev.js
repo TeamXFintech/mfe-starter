@@ -2,7 +2,7 @@ const { merge } = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 const commonConfig = require('./webpack.common');
-const deps = require('../package/package.json').dependencies;
+const deps = require('../package.json').dependencies;
 
 const baseURL = `http://localhost`;
 const port = __PORT__;
