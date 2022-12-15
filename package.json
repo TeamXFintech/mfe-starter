@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/TeamXFintech/mfe-starter.git",
-  "author": "kayrules <mohd.khairulnizam.md@rhbgroup.com>",
+  "author": "kayrules <kayrules@gmail.com>",
   "license": "MIT",
   "bin": {
     "mfe-starter": "./cli.sh"
