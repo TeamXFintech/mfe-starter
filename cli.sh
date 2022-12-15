@@ -20,7 +20,7 @@ grep -rl __PROJECT__ . | xargs sed -i "" -e 's/__PROJECT__/'$_project'/g'
 grep -rl __MODULE__ . | xargs sed -i "" -e 's/__MODULE__/'$_module'/g'
 grep -rl __PORT__ . | xargs sed -i "" -e 's/__PORT__/'$_port'/g'
 
-mv package ../../$_project
+mv package ../../$_module
 cd ../../
 rm -rf .temp
 
