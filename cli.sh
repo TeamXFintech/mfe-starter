@@ -22,4 +22,4 @@ mv package ../../$_project
 cd ../../
 rm -rf .temp
 
-echo $_project $_module
+echo 'DONE.'
