@@ -8,4 +8,18 @@ else
   _module=$2
 fi
 
+rm -rf .temp
+mkdir .temp
+cd .temp
+
+git clone https://github.com/TeamXFintech/mfe-starter.git
+cd mfe-starter
+
+grep -rl __PROJECT__ . | xargs sed -i "" -e 's/__PROJECT__/'$_project'/g'
+grep -rl __MODULE__ . | xargs sed -i "" -e 's/__MODULE__/'$_module'/g'
+
+mv package ../../$_project
+cd ../../
+rm -rf .temp
+
 echo $_project $_module

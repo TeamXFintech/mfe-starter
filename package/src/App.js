@@ -11,7 +11,7 @@ export default ({ history }) => {
         // <CssBaseline />
         <Router history={history}>
           <Switch>
-            <Route exact path="/__MODULE__/form" component={SecondScreen} />
+            <Route exact path="/__MODULE__/second" component={SecondScreen} />
             <Route path="/" component={Home} />
           </Switch>
         </Router>
