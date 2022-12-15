@@ -17,8 +17,8 @@ export default function() {
   return (
     <React.Fragment>
       <div style={styles.div}>
-        <h1>MFE Starter</h1>
-        <Link style={styles.a} to="/__MODULE__/form">Click Here to Second Screen</Link>
+        <h1>Second Screen</h1>
+        <Link style={styles.a} to="/">Back to Home</Link>
       </div>
     </React.Fragment>
   );

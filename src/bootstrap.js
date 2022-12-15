@@ -29,7 +29,7 @@ const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
 };
 
 if (process.env.NODE_ENV === "development") {
-  const devRoot = document.querySelector("#eligibility-root");
+  const devRoot = document.querySelector("#__MODULE__-root");
 
   if (devRoot) {
     mount(devRoot, {

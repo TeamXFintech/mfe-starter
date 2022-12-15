@@ -1,21 +1,21 @@
 import React from 'react';
 import { Switch, Route, Router } from 'react-router-dom';
-import { defaultTheme, ThemeProvider } from "@omni-channel/mfe-ui";
-import { Provider } from 'react-redux'
-// import store from './redux/store'
-import { Home, Form } from './components';
+// import { defaultTheme, ThemeProvider, CssBaseline } from 'nerv-ui';
+// import { Provider } from 'react-redux'
+import { Home, SecondScreen } from './components';
 
 export default ({ history }) => {
   return (
     // <Provider>
-      <ThemeProvider theme={defaultTheme}>
+      // <ThemeProvider theme={defaultTheme}>
+        // <CssBaseline />
         <Router history={history}>
           <Switch>
-            <Route exact path="/eligibility/form" component={Form} />
+            <Route exact path="/__MODULE__/form" component={SecondScreen} />
             <Route path="/" component={Home} />
           </Switch>
         </Router>
-      </ThemeProvider>
+      // </ThemeProvider>
     // </Provider>
   );
 };

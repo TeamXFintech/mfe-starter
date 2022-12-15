@@ -1,1 +1,1 @@
-export { useCarouselWidth } from '@omni-channel/mfe-ui';
+// 

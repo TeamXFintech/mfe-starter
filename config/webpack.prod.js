@@ -7,11 +7,11 @@ const prodConfig = {
   mode: "production",
   output: {
     filename: "[name].[contenthash].js",
-    publicPath: "/eligibility/",
+    publicPath: "/__MODULE__/",
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "eligibility",
+      name: "__MODULE__",
       filename: "remoteEntry.js",
       exposes: {
         "./App": "./src/bootstrap",
@@ -26,9 +26,6 @@ const prodConfig = {
         "react-dom": {
           singleton: true,
           requiredVersion: deps["react-dom"],
-        },
-        "@omni-channel/mfe-ui": {
-          singleton: true,
         },
       },
     }),

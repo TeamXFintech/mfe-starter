@@ -18,7 +18,7 @@ const devConfig = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'eligibility',
+      name: '__MODULE__',
       filename: 'remoteEntry.js',
       exposes: {
         './App': './src/bootstrap',
@@ -33,9 +33,6 @@ const devConfig = {
         "react-dom": {
           singleton: true,
           requiredVersion: deps["react-dom"],
-        },
-        "@omni-channel/mfe-ui": {
-          singleton: true
         },
       },
     }),

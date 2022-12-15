@@ -1,4 +1,4 @@
 import Home from "./Home";
-import Form from "./Form";
+import SecondScreen from "./SecondScreen";
 
-export { Home, Form };
+export { Home, SecondScreen };
